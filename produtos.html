@@ -3,50 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Produtos - Bracelet-Meliss</title>
-<style>
-:root {
-    --roxo: #d3b4ff;
-    --rosa: #ffc4e3;
-    --azul: #bfe5ff;
-    --verde: #caffd7;
-    --amarelo: #fff7bf;
-    --vidro: rgba(255,255,255,0.25);
-    --borda-vidro: rgba(255,255,255,0.45);
-    --sombra: rgba(0,0,0,0.15);
-}
-body { margin:0; font-family:'Poppins', sans-serif; background:#fffafc; }
-
-/* HEADER */
-header {
-    position: fixed; top:0; left:0; right:0;
-    display:flex; justify-content:space-between; align-items:center;
-    padding:15px 30px; backdrop-filter: blur(12px); background: var(--vidro); border-bottom:1px solid var(--borda-vidro); z-index:999;
-}
-nav a { margin-left:20px; text-decoration:none; font-weight:bold; color:#444;}
-nav a:hover { color: purple; }
-
-/* PRODUTOS */
-section { padding:120px 20px 50px 20px; text-align:center;}
-h1 { margin-bottom:10px; }
-.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:25px; margin-top:30px; }
-
-.card {
-    background: var(--vidro);
-    padding:20px;
-    border-radius:15px;
-    backdrop-filter: blur(10px);
-    border:1px solid var(--borda-vidro);
-    transition: transform .3s, box-shadow .3s;
-}
-.card:hover { transform: translateY(-10px) scale(1.05); box-shadow:0 15px 30px var(--sombra);}
-.card img { width:100%; height:180px; object-fit:cover; border-radius:12px; margin-bottom:10px;}
-.btn { display:inline-block; padding:10px 20px; background:var(--roxo); border-radius:20px; color:#333; text-decoration:none; font-weight:bold; margin-top:5px;}
-.btn:hover { transform:scale(1.05); }
-
-/* WHATSAPP */
-.whats-btn { position:fixed; bottom:20px; right:20px; background:#25D366; font-size:32px; padding:14px 18px; border-radius:50%; color:white; text-decoration:none; box-shadow:0 5px 15px var(--sombra);}
-</style>
+<title>Bracelet-Meliss - Produtos</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -60,22 +18,31 @@ h1 { margin-bottom:10px; }
 </nav>
 </header>
 
-<section>
+<section class="produtos">
 <h1>Nossas Pulseiras</h1>
-<p>Escolha sua combinação de cores favorita!</p>
-
 <div class="grid">
-    <div class="card"><img src="imagens/pulseira1.jpg"><h3>Pulseira Rosa</h3><p>R$15,00</p><a class="btn">Comprar</a></div>
-    <div class="card"><img src="imagens/pulseira2.jpg"><h3>Pulseira Azul</h3><p>R$18,00</p><a class="btn">Comprar</a></div>
-    <div class="card"><img src="imagens/pulseira3.jpg"><h3>Pulseira Verde</h3><p>R$20,00</p><a class="btn">Comprar</a></div>
-    <div class="card"><img src="imagens/pulseira4.jpg"><h3>Pulseira Amarela</h3><p>R$17,00</p><a class="btn">Comprar</a></div>
-    <div class="card"><img src="imagens/pulseira5.jpg"><h3>Pulseira Colorida</h3><p>R$22,00</p><a class="btn">Comprar</a></div>
-    <div class="card"><img src="imagens/pulseira6.jpg"><h3>Pulseira Personalizada</h3><p>R$25,00</p><a class="btn">Comprar</a></div>
+    <div class="card">
+        <img src="imagens/pulseira1.jpg" alt="Pulseira Rosa">
+        <h3>Pulseira Rosa</h3>
+        <p>R$15,00</p>
+        <a class="btn">Comprar</a>
+    </div>
+    <div class="card">
+        <img src="imagens/pulseira2.jpg" alt="Pulseira Azul">
+        <h3>Pulseira Azul</h3>
+        <p>R$18,00</p>
+        <a class="btn">Comprar</a>
+    </div>
+    <div class="card">
+        <img src="imagens/pulseira3.jpg" alt="Pulseira Verde">
+        <h3>Pulseira Verde</h3>
+        <p>R$20,00</p>
+        <a class="btn">Comprar</a>
+    </div>
 </div>
 </section>
 
 <a href="https://wa.me/" class="whats-btn">💬</a>
-
+<footer>© 2025 Bracelet-Meliss</footer>
 </body>
 </html>
-

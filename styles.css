@@ -67,6 +67,29 @@ nav a:hover { color: purple; }
 }
 .hero .btn:hover { transform: scale(1.05); box-shadow: 0 8px 25px var(--sombra); }
 
+/* PRODUTOS GRID */
+.produtos .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: var(--vidro);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--borda-vidro);
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 5px 15px var(--sombra);
+    transition: transform .3s, box-shadow .3s;
+}
+
+.card:hover { transform: scale(1.05); box-shadow: 0 8px 25px var(--sombra); }
+
+.card img { width: 100%; border-radius: 10px; margin-bottom: 10px; }
+
 /* ANIMAÇÃO FADE */
 @keyframes fadeIn { from {opacity:0; transform: translateY(20px);} to {opacity:1; transform:translateY(0);} }
 
@@ -86,4 +109,3 @@ nav a:hover { color: purple; }
 
 /* FOOTER */
 footer { text-align:center; padding:20px; background: var(--vidro); margin-top:40px; }
-
